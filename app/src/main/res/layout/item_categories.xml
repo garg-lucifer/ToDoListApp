@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="noOfTaskOfCategory"
+            type="com.example.todolist.data.model.NoOfTaskForEachCategory" />
+    </data>
+
+<com.google.android.material.card.MaterialCardView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/white"
+    style="@style/Widget.App.CardView"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/categoryCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:count = "@{noOfTaskOfCategory.count}"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@{noOfTaskOfCategory.category}"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/categoryColor"
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                app:view_color = "@{noOfTaskOfCategory.color}"/>
+
+            <View
+                android:id="@+id/categoryColorTop"
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                app:view_color = "@{noOfTaskOfCategory.color}"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#dcdcdc" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+</layout>

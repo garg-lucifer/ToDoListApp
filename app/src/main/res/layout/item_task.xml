@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="taskCategoryInfo"
+            type="com.example.todolist.data.model.TaskCategoryInfo" />
+    </data>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/white"
+    style="@style/Widget.App.CardView">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/isCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:check_status="@{taskCategoryInfo.taskInfo.status}"
+            app:view_color="@{taskCategoryInfo.categoryInfo[0].color}"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/desciption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@id/priority"
+            android:layout_toEndOf="@id/isCompleted"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:text="@{taskCategoryInfo.taskInfo.description}"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desciption"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/priority"
+            android:layout_toEndOf="@id/isCompleted"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            app:set_date="@{taskCategoryInfo.taskInfo.date}"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="11sp"
+            app:priority="@{taskCategoryInfo.taskInfo.priority}"
+            app:view_color="@{taskCategoryInfo.categoryInfo[0].color}" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
+</layout>

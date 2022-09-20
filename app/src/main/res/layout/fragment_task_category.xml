@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.fragments.TaskCategoryFragment">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#808080"
+            android:text="@string/tasks_to_do"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/text"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_margin="10dp"
+            android:paddingBottom="15dp"
+            android:clipToPadding="false"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/noResultAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/recyclerView"
+            app:lottie_rawRes="@raw/taskaanim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </RelativeLayout>
+</layout>

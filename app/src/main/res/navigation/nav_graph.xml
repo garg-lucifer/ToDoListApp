@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/base_fragment">
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.example.todolist.presentation.fragments.SettingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/completed_tasks_fragment"
+        android:name="com.example.todolist.presentation.fragments.CompletedTasksFragment"
+        android:label=""
+        tools:layout="@layout/fragment_completed_tasks" >
+        <action
+            android:id="@+id/action_completed_tasks_fragment_to_new_task_fragment"
+            app:destination="@id/new_task_fragment"
+            app:enterAnim="@anim/slide_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_category_fragment"
+        android:name="com.example.todolist.presentation.fragments.TaskCategoryFragment"
+        android:label=""
+        tools:layout="@layout/fragment_task_category" >
+        <argument
+            android:name="categoryString"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_task_category_fragment_to_new_task_fragment"
+            app:destination="@id/new_task_fragment"
+            app:enterAnim="@anim/slide_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/new_task_fragment"
+        android:name="com.example.todolist.presentation.fragments.NewTaskFragment"
+        android:label=""
+        tools:layout="@layout/fragment_new_task" >
+        <argument
+            android:name="newTaskArg"
+            app:argType="com.example.todolist.data.model.TaskCategoryInfo"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/base_fragment"
+        android:name="com.example.todolist.presentation.fragments.BaseFragment"
+        android:label=""
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_baseFragment_to_taskCategoryFragment"
+            app:destination="@id/task_category_fragment" />
+        <action
+            android:id="@+id/action_baseFragment_to_newTaskFragment"
+            app:destination="@id/new_task_fragment"
+            app:enterAnim="@anim/slide_up" />
+    </fragment>
+</navigation>
