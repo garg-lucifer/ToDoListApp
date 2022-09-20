@@ -5,10 +5,10 @@ To Do List App built in Kotlin using Material 3, Data Binding, Navigation Compon
 
 
 # Screenshots:
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 0 Day.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 1 Day.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 2 Day.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 3 Day.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 0.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 1.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 2.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 3.png" height="400px"/>
+<img src="/screenshots/day1.png" height="400px"/> <img src="/screenshots/day2.png" height="400px"/>
+<img src="/screenshots/day3.png" height="400px"/> <img src="/screenshots/day4.png" height="400px"/>
+<img src="/screenshots/night1.png" height="400px"/><img src="/screenshots/night2.png" height="400px"/> 
+<img src="/screenshots/night3.png" height="400px"/> <img src="/screenshots/night4.png" height="400px"/> 
 
 # License:
 MIT License
