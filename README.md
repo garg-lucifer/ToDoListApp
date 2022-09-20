@@ -1,19 +1,18 @@
-<h1>To Do List App</h1>
+<h1>ToDoListApp</h1>
 
 <p>
   <a href="https://opensource.org/licenses/MIT"><img alt="License" src="https://img.shields.io/badge/License-MIT-blue.svg"/></a>
   <a href="https://android-arsenal.com/api?level=26"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
 </p>
 
-<p align="center">  
+<p >  
 ToDoList App demonstrates modern Android development with Hilt, Coroutines, LiveData, Jetpack (Room, ViewModel), and Material 3 Design based on MVVM architecture. 
 </p>
 
-<p align="center">
+<p>
 # Screenshots:
 <img src="/screenshots/day1.png" height="400px"/> <img src="/screenshots/night1.png" height="400px"/> 
 <img src="/screenshots/day2.png" height="400px"/> <img src="/screenshots/night2.png" height="400px"/> 
-<br>
 <img src="/screenshots/day3.png" height="400px"/> <img src="/screenshots/night3.png" height="400px"/>
 <img src="/screenshots/day4.png" height="400px"/> <img src="/screenshots/night4.png" height="400px"/> 
 </p>
