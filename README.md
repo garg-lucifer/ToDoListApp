@@ -5,14 +5,11 @@ To Do List App built in Kotlin using Material 3, Data Binding, Navigation Compon
 
 
 # Screenshots:
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 0 Day.png" height="400px"/> 
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 1 Day.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 2 Day.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 3 Day.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 0.png" height="400px"/> 
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 1.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 2.png" height="400px"/>
-<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 3.png" height="400px"/>
+<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 0 Day.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 1 Day.png" height="400px"/>
+<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 2 Day.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 3 Day.png" height="400px"/>
+<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 0.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 1.png" height="400px"/>
+<img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 2.png" height="400px"/> <img src="/screenshots/Apple iPhone 11 Pro Max Screenshot 3.png" height="400px"/>
+
 # License:
 MIT License
 
