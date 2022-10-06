@@ -36,6 +36,9 @@ ToDoList App demonstrates modern Android development with Hilt, Coroutines, Live
 
 ![architecture](figure/figure0.png)
 
+## Room Database Structure
+![database structure](figure/RoomDBStructure.png)
+
 # License:
 MIT License
 
